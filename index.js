@@ -14,6 +14,10 @@ app.use(express.urlencoded({
 }))
 app.use(express.json())
 
+// ROUTES
+// Support Routes
+require('./app/support/support.routes')(app)
+
 app.listen(8080, () => {
     console.log('App running')
 })
